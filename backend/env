@@ -1,0 +1,3 @@
+DBURI=mongodb+srv://pviola2:Telecomunicazioni28!@cluster0.8tdbghq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+JWT_SECRET=segreto
