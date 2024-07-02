@@ -1,0 +1,26 @@
+.notifications {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .notifications h2 {
+    margin-bottom: 10px;
+  }
+  
+  .notifications ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notifications li {
+    padding: 8px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .notifications li:last-child {
+    border-bottom: none;
+  }
+  

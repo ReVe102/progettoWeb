@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(#0F3443, #208d5f);
+    padding: 0;
+}
+
+.container {
+    margin-top: -55.6px; 
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 45px 76px 20px 76px;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.header>img {
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 0px 10px rgba(0, 0.9, 0.4, 0.6);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 50px;
+}
+
+.nomeutente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 70px;
+}
+
+.left-buttons {
+    display: flex;
+    margin-left: 76px; 
+}
+
+.right-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 76px; 
+}
+
+.navbarButton {
+    font-size: 17px;
+    background-color: transparent !important; 
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid white !important; 
+    border-radius: 8px !important; 
+    padding: 10px 20px !important;
+    margin: 10px !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbarButton:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important; 
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 76px;
+    border-radius: 8px;
+    width: 900px;
+    height: calc(100% + 300px);
+}
+
+.leftbar {
+    color: #333;
+    width: 220px;
+    padding: 10px;
+}
+
+.formsx {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.leftbar>h2 {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.formsx>button {
+    text-align: left;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 17px;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+}
+
+.formsx>button:hover {
+    background-color: #d1d1d1;
+}
+
+.vertical-line {
+    border-left: 3px solid #282727; 
+    height: 260px;
+    margin-top: 50px;
+}
+
+.testo {
+    font-family: 'Arial', sans-serif; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #333; 
+    background-color:transparent;
+    height: 260px;
+    padding: 5px; 
+    margin-top: -38px;
+}
+
+.paragrafo{
+    flex:6;
+}
+
+.paragrafo>h2 {
+    margin-left: 20px;
+    padding: 10px;
+    color: #3a3535;
+    margin-top: 5px;
+}
+
+ul li {
+    margin: 20px;
+}
+
+.titoloLeftbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.notificationButton {
+    background-color: gray;
+    color: rgba(255, 255, 255, 0.4);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.info-notifiche {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 1420px; 
+}
+
+.notifications {
+    width: 30%;
+    height: 330px;
+    font-family: 'Arial', sans-serif; 
+    font-size: 18px; 
+    color: #333; 
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px; 
+    border-radius: 8px;
+    margin-right: 55px;
+}
+
+.notifications>h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+hr {
+    border: none; 
+    height: 3px; 
+    background-color: #d1d1d1; 
+    margin: 15px 0;
+}
+
+.notifichescorrere {
+    overflow-y: scroll;
+    top: 0;
+    background-color:transparent;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#iconamodifica {
+    cursor: pointer;
+}
+
+#chatButton {
+    display: block;
+    margin: 30px auto;
+    width: 14%;
+    padding: 10px;
+    background-color: #188a5a;
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.navbarButtonUtente {
+font-size: 17px;
+background-color: transparent !important; 
+color: white !important; 
+border: 1px solid white !important; 
+border-radius: 8px !important; 
+padding: 10px 20px !important;
+margin: 10px !important;
+cursor: pointer;
+text-decoration: none;
+}
+
+.navbarButtonUtente:hover {
+background-color: rgba(255, 255, 255, 0.1) !important; 
+}
+
+.buttonsUtente {
+display: flex;
+justify-content: flex-start; 
+align-items: center;
+width: 100%;
+background-color: transparent;
+margin-top: 70px;
+padding-bottom: -20px; 
+margin-left: 57px
+}
+
+.footerUtente {
+background-color: rgba(255, 255, 255, 0.6);
+display: flex;
+align-items: flex-start;
+justify-content: center; 
+border-radius: 12px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+margin: 20px auto;
+width: 900px;
+padding-bottom: 60px;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+#notificheAzienda{
+    margin-left: 200px;
+}
+.midbar{
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.midbar-container{
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-left: 40px;
+}
+.sonointeressato{
+    margin-left: 300px;
+    display: block;
+
+    width:15%;
+
+    padding: 10px;
+    background-color: #0aac68;
+    border-radius: 16px;
+    font-size: medium;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

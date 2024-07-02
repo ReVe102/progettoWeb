@@ -1,0 +1,27 @@
+.topbarContainer{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6) !important; 
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index:999;
+    box-shadow: 0px 4px 2px -2px gray;
+}
+
+.topbarLeft{
+    flex: 3;
+}
+
+.logo{
+    font-size: 24px;
+    margin-left:20px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+}
+
+.topbarCenter{
+    flex:5;
+}

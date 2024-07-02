@@ -1,0 +1,120 @@
+.post{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 80%;
+    margin: 40px auto  ;
+    border-radius: 10px;
+    box-shadow: 0px 2px 83px -56px rgba(0,0,0,1);
+-webkit-box-shadow: 0px 2px 83px -56px rgba(0,0,0,1);
+-moz-box-shadow: 0px 2px 83px -56px rgba(0,0,0,1);
+}
+
+.postWrapper{
+    padding: 10px;
+    position: relative;
+}
+
+.postTop{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postTopLeft{
+    display: flex;
+    align-items: center;
+}
+
+.postProfileImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.postUsername{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.postDate{
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.postCenter{
+    margin: 20px 0;
+}
+
+.postImg{
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.postBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postBottomLeft{
+    display:flex;
+    align-items: center;
+}
+
+.likeIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.postLikeCounter{
+    font-size: 15px;
+}
+
+.postTopRight{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center
+}
+
+.DeleteIcon{
+    color:dimgrey;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.postTopRight button{
+    background-color:beige;
+    border:none;
+    color: #333;
+    padding: 3px 6px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.postTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.postTop::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+}

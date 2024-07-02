@@ -1,0 +1,181 @@
+
+.register {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#0F3443,#34E89E);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.register-container {
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.6);   
+     width:700px;
+    padding: 10px;
+    margin:40px;
+    border-radius: 16px;
+    max-height: 85vh; 
+    
+}
+.register-container h2 {
+    margin: 15px;
+    text-align: center;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.input {
+    display: flex;
+    align-items: center;
+    margin:auto;
+    width: 80%;
+    height:30px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #eaeaea;
+
+}
+
+
+input{
+    height: 50px;
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979
+}
+
+
+.pulsanteRegistrati {
+    display: block;
+    margin: 30px auto;
+
+    width:80%;
+
+    padding: 10px;
+    background-color: #198e5d;
+
+    font-size: medium;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+
+}
+.pulsanteRegistrati:hover {
+    background-color: #0f583a;
+}
+
+.domanda{
+    padding-left: 60px;
+    margin-top: 0px;
+    color:#797979;
+    font-size: 14px;
+}
+
+a{
+    color: #269667;
+    text-decoration: none;
+}
+a:hover{
+    color:#797979;
+    cursor:pointer;
+
+    
+}
+
+
+select {
+    width: 40%;
+    display: block;
+
+    padding: 10px;
+    margin-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+
+
+    border: 2px solid #169761;
+    border-radius: 8px;
+    background-color: white;
+    background-size: 16px 12px;
+    cursor: pointer;
+  }
+
+
+select:focus{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #169761;
+
+}
+select:hover{
+    background-color: #e2e2e2;
+}
+
+  
+
+
+#status-si{
+    font-family: Arial, sans-serif;
+    cursor:pointer;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background: #10965e;
+    font-weight: 500;
+}
+
+#status-no{
+    font-family: Arial, sans-serif;
+    cursor:pointer;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background: #908e8e;
+    font-weight: 500;
+}
+
+.status-container{
+    display: flex;
+    gap: 30px;
+    margin: 20px ;
+}
+
+
+
+.input-container {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+.input-label {
+    position: absolute;
+    top: -10px; 
+    left: 60px;
+    background-color:white;
+    border-radius: 10px;
+    border: #f0f0f0 solid 1px;
+    padding: 0 5px;
+    color: #797979;
+    font-size: 12px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+
+}

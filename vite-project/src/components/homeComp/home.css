@@ -1,0 +1,16 @@
+
+.sidebar {
+    flex: 0 0 270px; 
+}
+
+.feed {
+    flex: 1;
+    margin-left: 310px; 
+    padding-top: 70px; 
+}
+
+.feedWrapper {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 310px); 
+}
