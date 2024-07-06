@@ -7,7 +7,6 @@ import { useRef, useState, useEffect } from "react";
 const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
 export default function Share() {
-  const PF = import.meta.env.VITE_PUBLIC_FOLDER;
   const desc = useRef();
   const [file, setFile] = useState(null);
   const [image, setImage] = useState("");
@@ -160,7 +159,7 @@ export default function Share() {
         <div className="shareTop">
           <img
             className="shareProfileImg"
-            src={profileImageUrl || `${PF}defaultpfp.jpg`}
+            src={profileImageUrl || `/defaultpfp.jpg`}
             alt=""
           />
           <input
