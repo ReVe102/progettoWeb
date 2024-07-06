@@ -72,7 +72,7 @@ const connessioneDb = async () => {
     }
 };
 
-server.listen(port, () => {
+server.listen(port, '0.0.0.0', () => {  // Associa il server all'host 0.0.0.0
     console.log(`Server in esecuzione sulla porta ${port}`);
     connessioneDb();
 });
