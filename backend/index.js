@@ -1,3 +1,4 @@
+// server.js
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -8,26 +9,21 @@ const http = require('http');
 const { Server } = require('socket.io');
 const Notification = require('./models/Notification');
 
-dotenv.config(); // Carica le variabili d'ambiente dal file .env
-
 app.use(cors());
+dotenv.config();
 app.use(express.json());
 app.use('/', authRoutes);
 
 app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ limit: '20mb', extended: true }));
 
-// Utilizza la variabile di ambiente PORT o default a 3000
-const port = process.env.PORT || 3000;
-const frontendUrl = process.env.FRONTEND_URL;
-
-
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: frontendUrl,
+        origin: '*',
     }
 });
+
 
 io.on('connection', (socket) => {
     console.log('Un utente si è connesso:', socket.id);
@@ -54,11 +50,6 @@ io.on('connection', (socket) => {
     });
 });
 
-// Rotta di prova per la root
-app.get('/', (req, res) => {
-    res.send('Server in esecuzione');
-});
-
 app.get('/notifications/:userId', async (req, res) => {
     const { userId } = req.params;
     const notifications = await Notification.find({ receiverId: userId });
@@ -70,11 +61,11 @@ const connessioneDb = async () => {
         await mongoose.connect(process.env.DBURI);
         console.log("Connessione al DB riuscita");
     } catch (err) {
-        console.error("Errore nella connessione al DB", err);
+        console.log("Errore nella connessione al DB");
     }
 };
 
-server.listen(port, '0.0.0.0', () => {  // Associa il server all'host 0.0.0.0
-    console.log(`Server in esecuzione sulla porta ${port}`);
+server.listen(3000, () => {
+    console.log("Server in esecuzione");
     connessioneDb();
 });
