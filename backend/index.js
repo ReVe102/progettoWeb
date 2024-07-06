@@ -24,7 +24,6 @@ const io = new Server(server, {
     }
 });
 
-
 io.on('connection', (socket) => {
     console.log('Un utente si è connesso:', socket.id);
 
@@ -50,6 +49,11 @@ io.on('connection', (socket) => {
     });
 });
 
+// Rotta di prova per la root
+app.get('/', (req, res) => {
+    res.send('Server in esecuzione');
+});
+
 app.get('/notifications/:userId', async (req, res) => {
     const { userId } = req.params;
     const notifications = await Notification.find({ receiverId: userId });
@@ -58,14 +62,14 @@ app.get('/notifications/:userId', async (req, res) => {
 
 const connessioneDb = async () => {
     try {
-        await mongoose.connect(process.env.DBURI);
+        await mongoose.connect(process.env.DBURI, { useNewUrlParser: true, useUnifiedTopology: true });
         console.log("Connessione al DB riuscita");
     } catch (err) {
-        console.log("Errore nella connessione al DB");
+        console.error("Errore nella connessione al DB", err);
     }
 };
 
 server.listen(3000, () => {
-    console.log("Server in esecuzione");
+    console.log("Server in esecuzione sulla porta 3000");
     connessioneDb();
 });
