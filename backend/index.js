@@ -19,11 +19,13 @@ app.use(express.urlencoded({ limit: '20mb', extended: true }));
 
 // Utilizza la variabile di ambiente PORT o default a 3000
 const port = process.env.PORT || 3000;
+const frontendUrl = process.env.FRONTEND_URL;
+
 
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: '*',
+        origin: frontendUrl,
     }
 });
 
